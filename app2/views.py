@@ -2,26 +2,26 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def elec(request):
+def meme2(request):
     data ={
-        "Categoria":"Electronica",
-        "Imagen": "/static/elec.png",
-        "Comentario": "Tomorroland",
+        "Categoria":"gatito",
+        "Imagen": "/static/gatito_lloron.jpg",
+        "Comentario": "cuando te va mal en el certamen",
     }
     return render(request, 'index.html', data)
 
-def pop (request):
+def meme1 (request):
     data ={
-        "Categoria":"Pop",
-        "Imagen": "/static/pop.png",
-        "Comentario": "Denise Rosenthal",
+        "Categoria":"perro mamado",
+        "Imagen": "/static/perro_mamado.jpg",
+        "Comentario": "cuando aprendes a programar / cuando te falla el codigo",
     }
     return render(request, 'index.html', data)
 
-def jazz (request):
+def meme3 (request):
     data ={
-        "Categoria":"Jazz",
-        "Imagen": "/static/jazz.png",
-        "Comentario": "Jazz",
+        "Categoria":"capybara",
+        "Imagen": "/static/capybara.jpg",
+        "Comentario": "cuando el profeso te aprueba igual",
     }
     return render(request, 'index.html', data)
